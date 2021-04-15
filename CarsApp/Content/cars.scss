@@ -1,0 +1,99 @@
+﻿html, body {
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	body {
+		> form {
+			height: 100%;
+
+			> .navbar {
+				height:52px;
+			}
+
+			.body-content {
+				padding-top:50px;
+				height:100%;
+
+				h2 {
+					border-bottom: 1px solid #e8e8e8;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					height: 50px;
+					margin: 0;
+					padding: 0;
+				}
+
+				.cars-grid-container {
+					overflow-y: scroll;
+					height: calc(100% - 200px);
+
+					> div {
+
+						table {
+							width: 100%;
+
+							tr {
+								height: 30px;
+
+								td {
+									position: relative;
+									height: 20px;
+								}
+
+								&:not(:first-child,:last-child) {
+
+									&:nth-child(2n+1) {
+										background-color: #e2e2e2;
+									}
+
+									td {
+										padding: 0 10px 0 10px;
+									}
+								}
+
+								&:first-of-type {
+									th {
+										font-weight: bold;
+										text-align: center;
+									}
+								}
+
+								&:last-of-type {
+									td {
+										text-align: center;
+									}
+								}
+							}
+						}
+					}
+				}
+
+				.add-car-container {
+					display: flex;
+					height: 80px;
+					justify-content: center;
+					align-items: center;
+					justify-content: space-between;
+
+					>div{
+						position:relative;
+					}
+				}
+
+				span[data-val-controltovalidate] {
+					display: block;
+					z-index: 1;
+					background: white;
+					white-space: nowrap;
+					border: 1px solid red;
+					position: absolute;
+					padding: 3px;
+				}
+			}
+		}
+	}
+}

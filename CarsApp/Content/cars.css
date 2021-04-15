@@ -1,0 +1,55 @@
+﻿html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0; }
+
+html body > form {
+  height: 100%; }
+  html body > form > .navbar {
+    height: 52px; }
+  html body > form .body-content {
+    padding-top: 50px;
+    height: 100%; }
+    html body > form .body-content h2 {
+      border-bottom: 1px solid #e8e8e8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50px;
+      margin: 0;
+      padding: 0; }
+    html body > form .body-content .cars-grid-container {
+      overflow-y: scroll;
+      height: calc(100% - 200px); }
+      html body > form .body-content .cars-grid-container > div table {
+        width: 100%; }
+        html body > form .body-content .cars-grid-container > div table tr {
+          height: 30px; }
+          html body > form .body-content .cars-grid-container > div table tr td {
+            position: relative;
+            height: 20px; }
+          html body > form .body-content .cars-grid-container > div table tr:not(:first-child, :last-child):nth-child(2n+1) {
+            background-color: #e2e2e2; }
+          html body > form .body-content .cars-grid-container > div table tr:not(:first-child, :last-child) td {
+            padding: 0 10px 0 10px; }
+          html body > form .body-content .cars-grid-container > div table tr:first-of-type th {
+            font-weight: bold;
+            text-align: center; }
+          html body > form .body-content .cars-grid-container > div table tr:last-of-type td {
+            text-align: center; }
+    html body > form .body-content .add-car-container {
+      display: flex;
+      height: 80px;
+      justify-content: center;
+      align-items: center;
+      justify-content: space-between; }
+      html body > form .body-content .add-car-container > div {
+        position: relative; }
+    html body > form .body-content span[data-val-controltovalidate] {
+      display: block;
+      z-index: 1;
+      background: white;
+      white-space: nowrap;
+      border: 1px solid red;
+      position: absolute;
+      padding: 3px; }
